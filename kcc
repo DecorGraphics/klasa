@@ -1,0 +1,65 @@
+#include <iostream>
+#include <windows.h>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+ int cowybierasz, wyjdz;
+ double liczba1, liczba2;
+
+ system("cls");
+ cout << "Kliknij przycisk i zatwierdz enterem\n\n[1] Dodawanie\n[2] Odejmowanie\n[3] Mnozenie\n[4] Dzielenie\n\n[0] Wyjdz\n\nWybieram numer: ";
+ cin >> cowybierasz;
+
+ switch( cowybierasz )
+{
+case 1:
+    system("cls");
+    cout << "Wybrales Dodawanie\n\n" << "Pierwsza liczba: ";
+    cin >> liczba1;
+    cout << "Druga liczba: ";
+    cin >> liczba2;
+    cout << "\nWynik to: " << liczba1 + liczba2 << "\n\nWpisz 0, by wrocic do menu: ";
+    cin >> wyjdz;
+    main();
+    break;
+
+case 2:
+    system("cls");
+    cout << "Wybrales Odejmowanie\n\n" << "Pierwsza liczba: ";
+    cin >> liczba1;
+    cout << "Druga liczba: ";
+    cin >> liczba2;
+    cout << "\nWynik to: " << liczba1 - liczba2 << "\n\nWpisz 0, by wrocic do menu: ";
+    cin >> wyjdz;
+    main();
+    break;
+
+case 3:
+    system("cls");
+    cout << "Wybrales Mnozenie\n\n" << "Pierwsza liczba: ";
+    cin >> liczba1;
+    cout << "Druga liczba: ";
+    cin >> liczba2;
+    cout << "\nWynik to: " << liczba1 * liczba2 << "\n\nWpisz 0, by wrocic do menu: ";
+    cin >> wyjdz;
+    main();
+    break;
+
+case 4:
+    system("cls");
+    cout << "Wybrales Dzielenie\n\n" << "Liczba ktora chcesz podzielic: ";
+    cin >> liczba1;
+    cout << "Druga liczba: ";
+    cin >> liczba2;
+    cout << "\nWynik to: " << liczba1/liczba2 << "\n\nWpisz 0, by wrocic do menu: ";
+    cin >> wyjdz;
+    main();
+    break;
+
+    break;
+          default:
+            main();
+            break;}
+};
